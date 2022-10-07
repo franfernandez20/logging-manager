@@ -2,10 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+import { log } from "next-axiom";
+
 const logThings = () => {
   console.log("hello world");
   console.warn("Here a warning");
   console.error("Here an error");
+
+  log.debug("new sign-in challenge", { customerId: 32423, auth: "session" });
 };
 
 export default function Home() {
