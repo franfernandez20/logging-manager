@@ -31,6 +31,45 @@ export default function Home() {
             <h2>Log Something &rarr;</h2>
           </button>
         </div>
+        <div className={styles.grid}>
+          <button
+            onClick={() =>
+              log.error("An Error", {
+                userId: "fff",
+                accountId: "0.0.4444",
+                network: "testnet",
+              })
+            }
+          >
+            <h2>Log an error &rarr;</h2>
+          </button>
+        </div>
+        <div className={styles.grid}>
+          <button
+            onClick={() =>
+              log.info("Some info", {
+                userId: "qqq",
+                accountId: "0.0.4446",
+                network: "testnet",
+              })
+            }
+          >
+            <h2>Log info &rarr;</h2>
+          </button>
+        </div>
+        <div className={styles.grid}>
+          <button
+            onClick={() =>
+              log.warn("An warning", {
+                userId: "zzzz",
+                accountId: "0.0.4447",
+                network: "testnet",
+              })
+            }
+          >
+            <h2>Log Something &rarr;</h2>
+          </button>
+        </div>
       </main>
 
       <footer className={styles.footer}>
