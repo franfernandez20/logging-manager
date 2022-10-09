@@ -22,15 +22,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>DEVELOPMENT ENVIROMENT</h1>
 
         <div className={styles.grid}>
           <button onClick={logThings}>
             <h2>Log Something &rarr;</h2>
           </button>
         </div>
+        <br />
         <div className={styles.grid}>
           <button
             onClick={() =>
@@ -44,6 +43,7 @@ export default function Home() {
             <h2>Log an error &rarr;</h2>
           </button>
         </div>
+        <br />
         <div className={styles.grid}>
           <button
             onClick={() =>
@@ -57,6 +57,7 @@ export default function Home() {
             <h2>Log info &rarr;</h2>
           </button>
         </div>
+        <br />
         <div className={styles.grid}>
           <button
             onClick={() =>
